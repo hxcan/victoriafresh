@@ -1,0 +1,23 @@
+syntax="proto3";
+
+package com.stupidbeauty.victoriafresh;
+
+import "google/protobuf/timestamp.proto";
+
+
+option java_package="com.stupidbeauty.victoriafresh";
+option java_outer_classname="FileMessageContainer";
+
+message FileMessage
+{
+  string name=1; //文件或目录名字。
+  repeated FileMessage sub_files=2; //子文件或目录列表。
+  bool is_file=3; //是否是文件。
+//   optional bytes file_content=4; //文件内容。已废弃。
+  int32 file_start_index=5; //这个文件的内容在victoriafreshdata大文件中的起始位置。
+  int32 file_length=6; //这个文件的内容的长度。
+//   int64 timestamp=7; //文件的最后修改时间
+    google.protobuf.Timestamp timestamp = 8; //文件的最后修改时间
+
+}
+

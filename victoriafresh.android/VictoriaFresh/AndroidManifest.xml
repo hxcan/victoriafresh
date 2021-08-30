@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<manifest package="com.stupidbeauty.victoriafresh" xmlns:android="http://schemas.android.com/apk/res/android"   android:installLocation="auto">
+    <supports-screens android:largeScreens="true" android:normalScreens="true" android:anyDensity="true" android:smallScreens="true"/>
+
+    <!-- The following comment will be replaced upon deployment with default permissions based on the dependencies of the application.
+         Remove the comment if you do not require these default permissions. -->
+        <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+</manifest>
